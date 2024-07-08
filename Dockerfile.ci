@@ -56,9 +56,9 @@ pip install --no-cache-dir --no-build-isolation --extra-index-url https://pypi.n
 git clone https://github.com/NVIDIA/Megatron-LM.git && \
 pushd Megatron-LM && \
 git checkout ${MCORE_TAG} && \
-git config --global user.name "a" && \
-git config --global user.email "a" && \
-git cherry-pick -X theirs 38d05361f51012826ee8cfad7227f5a07a0ed66b && \
+git remote add ovelrap https://github.com/michal2409/Megatron-LM && \
+git fetch ovelrap && \
+git cherry-pick 218b3b0ae1f7198313b158eab16b08e92cbf2192 && \
   pushd megatron/core/datasets && \
   make && \
   popd && \
