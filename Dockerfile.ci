@@ -58,7 +58,7 @@ pushd Megatron-LM && \
 git checkout ${MCORE_TAG} && \
 git config --global user.name "a" && \
 git config --global user.email "a" && \
-git cherry-pick 38d05361f51012826ee8cfad7227f5a07a0ed66b && \
+git cherry-pick -X theirs 38d05361f51012826ee8cfad7227f5a07a0ed66b && \
   pushd megatron/core/datasets && \
   make && \
   popd && \
