@@ -861,6 +861,8 @@ def get_log_dir(
         NotFoundError: If resume is True, resume_ignore_no_checkpoint is False, and checkpoints could not be found.
         ValueError: If resume is True, and there were more than 1 checkpoint could found.
     """
+
+    # TODO: fix for 2.0
     if explicit_log_dir:  # If explicit log_dir was passed, short circuit
         return check_explicit_log_dir(trainer, explicit_log_dir, exp_dir, name, version)
 

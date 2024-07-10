@@ -65,6 +65,7 @@ class NeMoLogger(IOMixin):
             AppState: The application state with updated log directory and other settings.
         """
         from nemo.constants import NEMO_ENV_VARNAME_VERSION
+        ## TODO: improve this for 2.0
         from nemo.utils.exp_manager import check_explicit_log_dir
         from nemo.utils.get_rank import is_global_rank_zero
 
