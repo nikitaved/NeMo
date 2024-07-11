@@ -41,11 +41,6 @@ def llama2_7b() -> pl.LightningModule:
 
 
 @factory
-def llama3_8b() -> pl.LightningModule:
-    return LlamaModel(Llama3Config8B())
-
-
-@factory
 def llama2_13b() -> pl.LightningModule:
     return LlamaModel(Llama2Config13B())
 

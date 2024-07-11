@@ -55,11 +55,11 @@ from nemo.collections.llm.gpt.model.api import (
     llama2_7b,
     llama2_13b,
     llama2_70b,
-    llama3_8b,
     llama3_70b,
     mistral,
     mixtral,
 )
+from nemo.collections.llm.factories import *
 
 __all__ = [
     "MockDataModule",
